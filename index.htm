@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GrabikonDesign</title>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+<body>
+  <header class="text-center gd-header" data-spy="affix" data-offset-top="70">
+    <div class="container">
+      <h1>3D巧克力烘培模</h1>
+      <ul class="row">
+        <li class="col-md-2 col-md-offset-3">
+          <a href="#agentur">3D巧克力模是什麼？</a>
+        </li>
+        <li class="col-md-2">
+          <a href="#service">我們的服務</a>
+        </li>
+        <li class="col-md-2">
+          <a href="#contact">聯絡方式</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="jumbotron gd-jumbotron text-center">
+    <h2>
+      <span>3D列印巧克力模</span>
+      <br>
+      <span>提供客製化選擇</span>
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="page-header text-center">
+      <h1 id="agentur">3D列印巧克力模<br><small>烘培建模，全面客製化</small></h1>
+    </div>
+    <p>
+      我們提供3D列印巧克力模的訂購，想要購買要趁早！ 
+    </p>
+    <p>
+      另外提供客製化服務，您只要將您的3D檔案寄給我們，我們就可以幫妳做一個獨一無二的巧克力烘培模，創造獨一無二，專屬自己的甜蜜
+    </p>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>我們所提供的有</h3>
+        <ul>
+          <li>精美3D列印巧克力模</li>
+          <li>自訂檔案，客製化選擇</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>我們的專長</h3>
+        <dl class="gd-expertise">
+          <dt>3D列印巧克力模</dt>
+          <dd>
+            <div class="progress progress-striped">
+               <div class="progress-bar" style="width: 56%;"></div>
+             </div>
+          </dd>
+          <dt>3D列印餅乾模</dt>
+          <dd>
+            <div class="progress progress-striped">
+               <div class="progress-bar" style="width: 50%;"></div>
+             </div>
+          </dd>
+          <dt>客製化烘培模</dt>
+          <dd>
+            <div class="progress progress-striped">
+               <div class="progress-bar" style="width: 70%;"></div>
+             </div>
+          </dd>
+
+        </dl>
+      </div>
+    </div>
+
+    <div class="well gd-well">
+      <a href="#" class="btn btn-large btn-danger pull-right">聯絡我們</a>
+      <h3>想要立刻入手嗎？</h3>
+      <p>Email聯絡我們，我們馬上可以為您進行處理</p>      
+    </div>
+  </div>
+
+  <div class="gd-service text-center">
+    <div class="container">
+      <div class="page-header">
+        <h1 id="service">我們的服務<br><small>3D列印!烘培客製化！</small></h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="well">
+            <i class="glyphicon glyphicon-heart-empty"></i>
+            <h3>3D列印巧克力模</h3>
+            <p>我們提供精緻、方便使用的3D列印巧克力模</p>
+
+            <a href="#" class="btn btn-danger">聯絡我們</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="well">
+            <i class="glyphicon glyphicon-gift"></i>
+            <h3>3D列印餅乾模</h3>
+            <p>我們提供精緻、方便使用的3D列印餅乾模</p>
+
+            <a href="#" class="btn btn-danger">聯絡我們</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="well">
+            <i class="glyphicon glyphicon-cloud-upload"></i>
+            <h3>客製化烘培模</h3>
+            <p>由您決定誰是派對的主人，將3D圖檔傳給我們，獨一無二的烘培模為您打造</p>
+
+            <a href="#" class="btn btn-danger">聯絡我們</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gd-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3 id="contact">聯絡方式</h3>
+          <p>
+            地址: <br>
+            統編： <br>
+            電話: <br>
+            Email: <br>
+          </p>
+        </div>
+        <div class="col-md-9">
+          <div id="map-canvas"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/bootstrap/affix.js"></script>
+
+  <!-- https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map -->
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script>
+    google.maps.event.addDomListener(window, 'load', function(){
+      var mapCanvas = document.getElementById('map-canvas');
+      var mapOptions = {
+        center: new google.maps.LatLng(25.019283, 121.541565),
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      map.set('styles', [{
+          "stylers": [
+            { "visibility": "simplified" },
+            { "lightness": -2 },
+            { "saturation": -100 }
+          ]
+        }
+      ]);
+    });
+  </script>
+</body>
+</html>

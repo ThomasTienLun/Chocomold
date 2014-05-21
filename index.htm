@@ -77,7 +77,16 @@
     </div>
 
     <div class="well gd-well">
-      <a href="#" class="btn btn-large btn-danger pull-right">聯絡我們</a>
+    <div class="col-lg-12">
+      <form action="email_processing.php" method="post">
+      <div class="input-group">
+        <input type="text" name="user_email" value="" class="form-control" placeholder="Example@example.com">
+        <span class="input-group-btn">
+          <button class="btn btn-default btn-danger" type="submit" name="submit" value="">聯絡我們</button>
+        </span>
+      </div>
+      </form>
+    </div>
       <h3>想要立刻入手嗎？</h3>
       <p>Email聯絡我們，我們馬上可以為您進行處理</p>      
     </div>

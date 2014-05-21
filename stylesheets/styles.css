@@ -7966,7 +7966,7 @@ button.close {
 
 /* line 84, ../sass/styles.scss */
 .gd-well {
-  margin: 5em 0;
+  margin: 4em 0;
 }
 /* line 86, ../sass/styles.scss */
 .gd-well h3 {
@@ -7978,7 +7978,7 @@ button.close {
 }
 /* line 92, ../sass/styles.scss */
 .gd-well .btn {
-  margin-top: 15px;
+  margin-top: 0;
 }
 
 /* line 97, ../sass/styles.scss */

@@ -11,8 +11,8 @@
 
 $gray-darker:            lighten(#000, 13.5%); // #222
 $gray-dark:              lighten(#000, 20%);   // #333
-//$gray:                   lighten(#000, 33.5%); // #555
-//$gray-light:             lighten(#000, 60%);   // #999
+$gray:                   lighten(#000, 33.5%); // #555
+$gray-light:             lighten(#000, 60%);   // #999
 $gray-lighter:           lighten(#000, 93.5%); // #eee
 
 // Brand colors
@@ -74,11 +74,11 @@ $icon-font-name:          "glyphicons-halflings-regular";
 // -------------------------
 // Based on 14px font-size and 1.428 line-height (~20px to start)
 
-//$padding-base-vertical:          6px;
-//$padding-base-horizontal:        12px;
+$padding-base-vertical:          6px;
+$padding-base-horizontal:        12px;
 
-//$padding-large-vertical:         10px;
-//$padding-large-horizontal:       16px;
+$padding-large-vertical:         10px;
+$padding-large-horizontal:       16px;
 
 //$padding-small-vertical:         5px;
 //$padding-small-horizontal:       10px;
@@ -143,11 +143,11 @@ $btn-info-border:                darken($btn-info-bg, 5%);
 // Forms
 // -------------------------
 
-//$input-bg:                       #fff;
-//$input-bg-disabled:              $gray-lighter;
+$input-bg:                       #fff;
+$input-bg-disabled:              $gray-lighter;
 
-//$input-color:                    $gray;
-//$input-border:                   #ccc;
+$input-color:                    $gray;
+$input-border:                   #ccc;
 //$input-border-radius:            $border-radius-base;
 //$input-border-focus:             #66afe9;
 
@@ -160,8 +160,8 @@ $btn-info-border:                darken($btn-info-bg, 5%);
 //$legend-color:                   $gray-dark;
 //$legend-border-color:            #e5e5e5;
 
-//$input-group-addon-bg:           $gray-lighter;
-//$input-group-addon-border-color: $input-border;
+$input-group-addon-bg:           $gray-lighter;
+$input-group-addon-border-color: $input-border;
 
 // Dropdowns
 // -------------------------
